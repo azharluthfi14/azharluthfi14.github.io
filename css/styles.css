@@ -10,8 +10,8 @@ html
 }
 body
 {
-    font-family: 'Quicksand',sans-serif;
-   
+  font-family: 'Quicksand',sans-serif;
+  background-color: #1e112c;
 }
 .bg-indigo
 {
@@ -420,7 +420,7 @@ nav.navbar  ul li a:hover::after {
   /* ========== SKILL SECTION ======= */
   .skill-section
   {   
-    height: 55vh;
+    height: 155vh;
   }
   .skill-data-all
   {
