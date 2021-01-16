@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+*
+{
+  box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    font-family: 'Quicksand',sans-serif;
+   
+}
+.bg-indigo
+{
+  background-color: #750acc;
+}
+
+.bg-indigo-dark
+{
+  background-color: #1e112c;
+}
+.section-title
+{
+    text-align: center;
+    position: relative;
+}
+
+.section-title::after
+{
+    position: absolute;
+    content: "";
+    width: 80px;
+    height: .15em;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 2.5rem;
+    background-color: #750acc;
+}
+
+/* =========== BUTTON STYLE =============== */
+
+.btn
+{
+  padding: 10px 25px;
+}
+
+.btn-indigo
+{
+  background-color: #750acc;
+  color: #fff;
+}
+
+.btn-indigo:hover
+{
+  background-color: #8b21e2;
+  color: #fff;
+}
+
+/* ========== NAVBAR SECTION ========== */
+.navbar-brand
+{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav.navbar  ul li a,
+nav.navbar  ul li a::after,
+nav.navbar  ul li a::before {
+  transition: all 0.5s;
+}
+
+nav.navbar  ul li a {
+  position: relative;
+}
+
+nav.navbar  ul li a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: "";
+  color: transparent;
+  background: #8b24e0;
+  height: 2px;
+}
+
+nav.navbar  ul li a:hover::after {
+  width: 100%;
+}
+
+.nav-item a.nav-link
+{
+  margin: 0 10px;
+}
+
+/* ========= HAMBURGER STYLE ======== */
+
+.navbar-toggler
+{
+   outline: none;
+   border: none;
+}
+.burger-align 
+{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+  
+#simply-burger 
+{
+  width: 20px;
+  height: 20px;
+  transform: rotate(0deg);
+  transition: 0.25s * 2 ease-in-out;
+  cursor: pointer;
+}
+  
+ 
+#simply-burger span 
+{
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #fff;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition:0.25s ease-in-out;
+}
+  
+ 
+#simply-burger span:nth-child(1) 
+{
+  top: 0px;
+}
+  
+#simply-burger span:nth-child(2) 
+{
+  top: 7px;
+}
+  
+#simply-burger span:nth-child(3) 
+{
+  top: 14px;
+}
+  
+#simply-burger.open span:nth-child(1) 
+{
+  top: 10px;
+  transform: rotate(135deg);
+}
+  
+#simply-burger.open span:nth-child(2) 
+{
+  opacity: 0;
+  left: -60px;
+}
+  
+#simply-burger.open span:nth-child(3) 
+{
+  top: 10px;
+  transform: rotate(-135deg);
+}
+  
+/* ======= HEADING SECTION ========= */
+.heading-section
+{
+  padding: 50px 0;
+  height: calc(100vh - 3rem);
+  background-color: #1e112c;
+  
+}
+
+.heading-item-all
+{
+  padding: 70px 0;
+}
+
+.heading-data
+{
+  margin-top: 40px;
+}
+
+.heading-data h1
+{
+    font-size: 50px;
+    color: #fff;
+}
+.heading-data h3
+{
+    font-size: 40px;
+    color: #fff;
+}
+
+.heading-data .my-text3
+{
+  color: #750acc;
+}
+
+.heading-image img
+{
+    width: 200px;
+}
+
+/* ======= WAVE STYLE ============ */
+.wave
+{
+  z-index: 1;
+  position: relative;
+  margin-top: -230px;
+}
+
+
+/* ======= ABOUT SECTION ======= */
+
+.about-section
+{
+    height: calc(100vh - 3rem);
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.about-item-all
+{
+    padding: 30px 0;
+}
+
+.about-desc
+{
+  justify-content: center;
+  margin: 80px 0;
+}
+
+.about-desc h4
+{
+  font-weight: bold;
+  font-size: 28px;
+}
+.about-desc p
+{
+  line-height: 1.8;
+  margin-top: 20px;
+}
+.about-image
+{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.about-image img
+{
+  width: 370px;
+}
+
+
+
+/* ========== SKILL SECTION ======= */
+
+.skill-section
+{
+    height: calc(100vh - 3rem);
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.skill-data-all
+{
+  padding: 30px auto;
+}
+.skill-img
+{
+  display: flex;
+  justify-content: center;
+}
+.skill-img img
+{
+  width: 350px;
+}
+
+/* ============ SKILL PROGRESS =========== */
+
+.icon-skill
+{
+ color: #750acc;
+}
+
+.progress-title
+{
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 10px 0;
+}
+.progress{
+  height: 15px;
+  line-height: 15px;
+  border-radius: 20px;
+  background: #f0f0f0;
+  margin-bottom: 30px;
+  box-shadow: none;
+  overflow: visible;
+}
+.progress .progress-bar{
+  position: relative;
+  border-radius: 20px 0 0 20px;
+  animation: animate-positive 2s;
+}
+.progress .progress-value{
+  display: block;
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 8px;
+}
+@-webkit-keyframes animate-positive{
+  0% { width: 0%; }
+}
+@keyframes animate-positive{
+  0% { width: 0%; }
+}
+
+
+/* ===== MEDIA QUERIES=====*/
+@media screen and (max-width: 900px)
+{
+  /* ========= NAVBAR MENU ============= */
+  .navbar-collapse
+  {
+    text-align: center;
+  }
+  .navbar-nav .nav-item
+  {
+    margin: 15px 0;
+  }
+  /* =========== WAVE SECTION ============ */
+  .wave
+  {
+    display: none;
+  }
+  /* ======= HEADING SECTION ========= */
+  .heading-section
+  {
+    height: calc(120vh - 3rem);
+    border-radius: 0 0 30px 30px;
+  }
+
+  /* ======= ABOUT SECTION ======= */
+  .about-section
+  {
+    height: calc(150vh - 3rem);
+  }
+
+  /* ======= SKILL SECTION ======= */
+  .skill-section
+  {
+    height: calc(100vh - 3rem);
+  }
+}
+
+@media screen and (max-width: 480px)
+{
+   /* ======= HEADING SECTION ========= */
+   .heading-section
+   {
+     height: 100vh;
+   }
+   .heading-data
+   {
+     order: 1;
+     text-align: center;
+   }
+   .heading-data h1
+   {
+     font-size: 28px;
+   }
+   .heading-data h3
+   {
+     font-size: 18px;
+   }
+   .heading-image img
+   {
+     width: 150px;
+   }
+
+   /* ======= WAVE STYLE ============ */
+    .wave
+    {
+      display: none;
+    }
+   /* ======= ABOUT SECTION ======= */
+   .about-section
+  {
+    height: 100vh;
+    
+  }
+   .about-image img
+  {
+    width: 270px;
+  }
+
+  /* ========== SKILL SECTION ======= */
+  .skill-section
+  {   
+    height: 150vh;
+  }
+  .skill-data-all
+  {
+    padding: 50px auto;
+  }
+
+}
