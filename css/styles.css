@@ -375,7 +375,7 @@ nav.navbar  ul li a:hover::after {
    /* ======= HEADING SECTION ========= */
    .heading-section
    {
-     height: 100vh;
+     height: 35em;
    }
    .heading-data
    {
@@ -403,8 +403,7 @@ nav.navbar  ul li a:hover::after {
    /* ======= ABOUT SECTION ======= */
    .about-section
   {
-    height: 100vh;
-    
+    height: 55em;
   }
    .about-image img
   {
@@ -414,7 +413,7 @@ nav.navbar  ul li a:hover::after {
   /* ========== SKILL SECTION ======= */
   .skill-section
   {   
-    height: 150vh;
+    height: 55em;
   }
   .skill-data-all
   {
