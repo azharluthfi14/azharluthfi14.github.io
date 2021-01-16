@@ -251,6 +251,8 @@ nav.navbar  ul li a:hover::after {
 {
   line-height: 1.8;
   margin-top: 20px;
+  font-weight: 500;
+  color: #646464;
 }
 .about-image
 {
@@ -294,6 +296,11 @@ nav.navbar  ul li a:hover::after {
 .icon-skill
 {
  color: #750acc;
+}
+
+.card-skill h5,p
+{
+  color: #646464;
 }
 
 .progress-title
