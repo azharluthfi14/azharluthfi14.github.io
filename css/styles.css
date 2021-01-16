@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
-*
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+* 
 {
   box-sizing: border-box;
 }
@@ -10,7 +13,6 @@ html
 }
 body
 {
-  font-family: 'Quicksand',sans-serif;
   background-color: #1e112c;
 }
 .bg-indigo
@@ -26,6 +28,8 @@ body
 {
     text-align: center;
     position: relative;
+    font-weight: bold;
+    font-family: 'Roboto',sans-serif;
 }
 
 .section-title::after
@@ -61,6 +65,10 @@ body
 }
 
 /* ========== NAVBAR SECTION ========== */
+.navbar
+{
+  padding: 9px;
+}
 .navbar-brand
 {
     font-weight: bold;
@@ -135,6 +143,7 @@ nav.navbar  ul li a:hover::after {
   border-radius: 9px;
   opacity: 1;
   left: 0;
+  right: 0;
   transform: rotate(0deg);
   transition:0.25s ease-in-out;
 }
@@ -196,11 +205,13 @@ nav.navbar  ul li a:hover::after {
 {
     font-size: 50px;
     color: #fff;
+    font-family: 'Quicksand', sans-serif;
 }
 .heading-data h3
 {
     font-size: 40px;
     color: #fff;
+    font-family: 'Poppins',sans-serif;
 }
 
 .heading-data .my-text3
@@ -250,9 +261,9 @@ nav.navbar  ul li a:hover::after {
 .about-desc p
 {
   line-height: 1.8;
-  margin-top: 20px;
-  font-weight: 500;
+  margin-top: 10px;
   color: #646464;
+  font-family: 'Roboto',sans-serif;
 }
 .about-image
 {
@@ -272,7 +283,7 @@ nav.navbar  ul li a:hover::after {
 
 .skill-section
 {
-    height: calc(100vh - 3rem);
+    height: calc(110vh - 3rem);
     padding: 50px 0;
     background-color: #fff;
 }
@@ -411,6 +422,16 @@ nav.navbar  ul li a:hover::after {
    .about-section
   {
     height: 55em;
+    border-radius: 20px 20px 0 0;
+  }
+  .about-desc h4
+  {
+    font-size: 25px;
+    text-align: center;
+  }
+  .about-desc p
+  {
+    text-align: center;
   }
    .about-image img
   {
@@ -420,11 +441,20 @@ nav.navbar  ul li a:hover::after {
   /* ========== SKILL SECTION ======= */
   .skill-section
   {   
-    height: 155vh;
+    height: 900px;
   }
   .skill-data-all
   {
     padding: 50px auto;
+  }
+  .card-skill
+  {
+    order: 1;
+    margin-top: 20px;
+  }
+  .skill-img img
+  {
+    width: 250px;
   }
 
 }
