@@ -17,7 +17,7 @@ body
 }
 .bg-indigo
 {
-  background-color: #750acc;
+  background-color: #6930c3;
 }
 
 .bg-indigo-dark
@@ -42,7 +42,7 @@ body
     right: 0;
     margin: auto;
     top: 2.5rem;
-    background-color: #750acc;
+    background-color: #6930c3;
 }
 
 /* =========== BUTTON STYLE =============== */
@@ -54,13 +54,13 @@ body
 
 .btn-indigo
 {
-  background-color: #750acc;
+  background-color: #6930c3;
   color: #fff;
 }
 
 .btn-indigo:hover
 {
-  background-color: #8b21e2;
+  background-color: #925ee7;
   color: #fff;
 }
 
@@ -68,6 +68,12 @@ body
 .navbar
 {
   padding: 9px;
+}
+
+.icon-navbar
+{
+  width: 35px;
+  height: 35px;
 }
 .navbar-brand
 {
@@ -306,12 +312,12 @@ nav.navbar  ul li a:hover::after {
 
 .icon-skill
 {
- color: #750acc;
+ color: #6930C3;
 }
 
-.card-skill h5,p
+.card-skill h5
 {
-  color: #646464;
+  color: #6930C3;
 }
 
 .progress-title
@@ -421,7 +427,7 @@ nav.navbar  ul li a:hover::after {
    /* ======= ABOUT SECTION ======= */
    .about-section
   {
-    height: 55em;
+    height: 50em;
     border-radius: 20px 20px 0 0;
   }
   .about-desc h4
@@ -451,6 +457,10 @@ nav.navbar  ul li a:hover::after {
   {
     order: 1;
     margin-top: 20px;
+  }
+  .skill-img
+  {
+    margin: 30px 0;
   }
   .skill-img img
   {
