@@ -449,7 +449,7 @@ nav.navbar  ul li a:hover::after {
   /* ========== SKILL SECTION ======= */
   .skill-section
   {   
-    height: 900px;
+    height: 100%;
   }
   .skill-data-all
   {
