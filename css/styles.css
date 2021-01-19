@@ -79,9 +79,10 @@ body
 .navbar-brand
 {
     font-weight: bold;
-    font-size: 21px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 nav.navbar  ul li a,
