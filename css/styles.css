@@ -768,9 +768,9 @@ nav.navbar  ul li a:hover::after {
     left: 0;
   }
   .social-icon
-  {
-   margin-right: 20px;
-
+  { 
+    margin-right: 10px;
+    font-size: 25px;
   }
 
 }
