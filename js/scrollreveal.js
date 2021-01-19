@@ -26,10 +26,21 @@ const item_slide_up = [
     document.querySelector('.about-image'),
 ];
 
+const cardSkill = document.querySelectorAll('.card-skill-content');
+
 
 ScrollReveal()
     .reveal(
         item_slide_up, slideUp,
+        {
+            delay: 200,
+            reset: true
+        }
+    );
+
+ScrollReveal()
+    .reveal(
+        cardSkill, slideUp,
         {
             delay: 200,
             reset: true
@@ -47,8 +58,13 @@ ScrollReveal()
     );
 
 
+const timelineData = document.querySelectorAll('.timeline-content');
 
 ScrollReveal()
     .reveal(
-        item_fade_in, fadeIn
-    )
+        timelineData, slideUp,
+        {
+            delay: 200,
+            reset: true
+        }
+    );
