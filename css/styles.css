@@ -123,6 +123,7 @@ nav.navbar  ul li a:hover::after {
 {
    outline: none;
    border: none;
+   background-color: transparent;
 }
 .burger-align 
 {
@@ -377,6 +378,7 @@ nav.navbar  ul li a:hover::after {
   height: calc(130vh - 3rem);
   padding: 70px 0;
   background-color: #fff;
+  border-radius: 0 0 20px 20px;
 }
 
 .circle {
@@ -484,6 +486,14 @@ nav.navbar  ul li a:hover::after {
   top: calc(50% - 3px);
 }
 
+/* ========== FOOTER SECTION ========= */
+.my-footer
+{
+  
+  padding: 2rem 0;
+  color: #fff;
+  text-align: center;
+}
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 900px)
@@ -602,7 +612,7 @@ nav.navbar  ul li a:hover::after {
   /* ========== TIMELINE SECTION ======= */
   .timeline-section
   {
-    height: calc(100vh - 3rem);
+    height: 100vh;
     padding: 70px 0;
   }
 

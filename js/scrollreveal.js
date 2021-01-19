@@ -57,7 +57,6 @@ ScrollReveal()
         }
     );
 
-
 const timelineData = document.querySelectorAll('.timeline-content');
 
 ScrollReveal()
