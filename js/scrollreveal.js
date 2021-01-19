@@ -1,8 +1,8 @@
 const slideUp =
 {
-    distance: '150%',
+    distance: '100%',
     origin: 'bottom',
-    opacity: .2,
+    opacity: 0,
     easing: 'ease-in'
 };
 
@@ -22,13 +22,10 @@ const item_slide_up = [
     document.querySelector('.my-text3'),
     document.querySelector('.btn-indigo'),
     document.querySelector('.section-title'),
-    document.querySelector('.about-desc')
-];
-
-const item_fade_in = [
+    document.querySelector('.about-desc'),
     document.querySelector('.about-image'),
-
 ];
+
 
 ScrollReveal()
     .reveal(
