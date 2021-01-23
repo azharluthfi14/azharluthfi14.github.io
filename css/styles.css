@@ -123,7 +123,7 @@ nav.navbar  ul li a:hover::after {
 {
    outline: none;
    border: none;
-   background-color: transparent !important;
+   background-color: transparent;
 }
 .burger-align 
 {
