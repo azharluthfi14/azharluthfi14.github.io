@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 * 
 {
   box-sizing: border-box;
@@ -28,8 +29,8 @@ body
 {
     text-align: center;
     position: relative;
-    font-weight: bold;
-    font-family: 'Roboto',sans-serif;
+    font-weight: 550;
+    font-family: 'Quicksand',sans-serif;
 }
 
 .section-title::after
@@ -196,16 +197,16 @@ nav.navbar  ul li a:hover::after {
 /* ======= HEADING SECTION ========= */
 .heading-section
 {
-  padding: 50px 0;
-  height: calc(100vh - 3rem);
+  padding: 100px 0;
   background-color: #1e112c;
-  
+  margin-top: 50px;
+  height: 500px;
 }
 
-.heading-item-all
+/* .heading-item-all
 {
   padding: 70px 0;
-}
+} */
 
 .heading-data
 {
@@ -230,6 +231,7 @@ nav.navbar  ul li a:hover::after {
 .heading-data .my-text3
 {
   color: #750acc;
+  
 }
 
 .heading-image img
@@ -245,14 +247,30 @@ nav.navbar  ul li a:hover::after {
   margin-top: -230px;
 }
 
+/* ======= EFFECT STYLE ============ */
+.effect-wrap .effect {
+  position: absolute;
+}
+
+.effect-1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 15%;
+  border: 4px solid #ffffff;
+  right: 32%;
+  top: 80%;
+  opacity: 1;
+}
+
 
 /* ======= ABOUT SECTION ======= */
 
 .about-section
 {
-    height: calc(100vh - 3rem);
-    padding: 50px 0;
+    padding: 20px 0;
+    height: 600px;
     background-color: #fff;
+    border-radius: 50px 50px 0 0;
 }
 
 .about-item-all
@@ -269,16 +287,20 @@ nav.navbar  ul li a:hover::after {
 .about-desc h4
 {
   font-weight: bold;
-  font-size: 28px;
+  font-size: 20px;
   color: #6930c3;
+  font-family: 'Poppins',sans-serif;
 }
 .about-desc p
 {
   line-height: 1.8;
   margin-top: 10px;
   color: #646464;
-  font-family: 'Roboto',sans-serif;
+  letter-spacing: 1.3;
+  font-size: 1.2em;
+  font-family: 'Open Sans', sans-serif;
 }
+
 .about-image
 {
   display: flex;
@@ -291,21 +313,24 @@ nav.navbar  ul li a:hover::after {
   width: 370px;
 }
 
-
+.section{
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
 
 /* ========== SKILL SECTION ======= */
 
 .skill-section
 {
-    height: calc(150vh - 3rem);
-    padding: 50px 0;
+    padding: 30px 0;
+    height: 950px;
     background-color: #fff;
 }
 
-.skill-data-all
+/* .skill-data-all
 {
-  padding: 30px auto;
-}
+  padding: 30px 0;
+} */
 .skill-img
 {
   display: flex;
@@ -375,8 +400,8 @@ nav.navbar  ul li a:hover::after {
 /* ========== TIMELINE SECTION ========= */
 .timeline-section
 {
-  height: calc(100vh - 3rem);
   padding: 70px 0;
+  height: 600px;
   background-color: #fff;
   border-radius: 0 0 30px 30px;
 }
@@ -668,7 +693,7 @@ nav.navbar  ul li a:hover::after {
    /* ======= HEADING SECTION ========= */
    .heading-section
    {
-    height: 100%;
+    height: 300px;
    }
    .heading-data
    {
@@ -696,13 +721,13 @@ nav.navbar  ul li a:hover::after {
    /* ======= ABOUT SECTION ======= */
    .about-section
   {
-    height: 100vh;
+    height: 500px;
     border-radius: 20px 20px 0 0;
   }
-  .about-item-all
+  /* .about-item-all
   {
     padding: 30px 0;
-  }
+  } */
   .about-desc h4
   {
     font-size: 25px;
@@ -720,7 +745,7 @@ nav.navbar  ul li a:hover::after {
   /* ========== SKILL SECTION ======= */
   .skill-section
   {   
-    height: 100%;
+    height: 500px;
   }
   .skill-data-all
   {
@@ -750,7 +775,7 @@ nav.navbar  ul li a:hover::after {
   .node-path.row .col-2.full-left::after 
   {
     height: 100%;
-    left: calc(55% - 3px);
+    left: calc(56% - 3px);
   }
   .node-path.row .col-2.top-right::after 
   {
@@ -802,7 +827,7 @@ nav.navbar  ul li a:hover::after {
    /* ======= HEADING SECTION ========= */
    .heading-section
    {
-      height: 100%;
+      height: 650px;
    }
    .heading-data
    {
@@ -822,7 +847,7 @@ nav.navbar  ul li a:hover::after {
 
     .about-section
     {
-      height: 100%;
+      height: 1000px;
       border-radius: 20px 20px 0 0;
     }
    
@@ -830,6 +855,11 @@ nav.navbar  ul li a:hover::after {
   /* ========== SKILL SECTION ======= */
   .skill-section
   {   
-    height: 100%;
+    height: 1450px;
+  }
+  /* ========== TIMELINE SECTION ======= */
+  .timeline-section
+  {
+    height: 700px;
   }
 }
