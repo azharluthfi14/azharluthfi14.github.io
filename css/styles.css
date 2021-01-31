@@ -270,7 +270,7 @@ nav.navbar  ul li a:hover::after {
     padding: 20px 0;
     height: 600px;
     background-color: #fff;
-    border-radius: 50px 50px 0 0;
+    border-radius: 70px 70px 0 0;
 }
 
 .about-item-all
@@ -405,10 +405,12 @@ nav.navbar  ul li a:hover::after {
 
 .circle {
   font-weight: bold;
-  padding: 15px 20px;
   border-radius: 50%;
   background-color: #8853dd;
   color: #ffffff;
+  padding: 20px;
+  align-items: center;
+  display: flex;
   max-height: 50px;
   z-index: 2;
 }
@@ -444,7 +446,7 @@ nav.navbar  ul li a:hover::after {
 .node-path.row .col-2.full-left::after 
 {
   height: 100%;
-  left: calc(52% - 3px);
+  left: calc(50% - 3px);
 }
 .node-path.row .col-2.top::after 
 {
@@ -456,7 +458,7 @@ nav.navbar  ul li a:hover::after {
 .node-path.row .col-2.top-right::after 
 {
   height: 50%;
-  left: 48.5%;
+  left: calc(50% - 3px);
   top: 0;
 }
 
@@ -645,7 +647,8 @@ nav.navbar  ul li a:hover::after {
 
 
 /* ===== MEDIA QUERIES=====*/
-@media screen and (max-width: 900px)
+
+@media screen and (max-width: 575.98px)
 {
   /* ========= NAVBAR MENU ============= */
   .navbar-collapse
@@ -656,48 +659,6 @@ nav.navbar  ul li a:hover::after {
   {
     margin: 15px 0;
   }
-  /* =========== WAVE SECTION ============ */
-  .wave
-  {
-    display: none;
-  }
-  /* ======= HEADING SECTION ========= */
-  .heading-section
-  {
-    height: 700px;
-    border-radius: 0 0 30px 30px;
-  }
-
-  .heading-item-all
-  {
-    text-align: center;
-  }
-  .heading-data
-  {
-    order: 1;
-  }
-
-  /* ======= ABOUT SECTION ======= */
-  .about-section
-  {
-    height: 800px;
-  }
-
-  /* ======= SKILL SECTION ======= */
-  .skill-section
-  {
-    height: 1600px;
-  }
-  .card-skill
-  {
-    order: 1;
-    margin-top: 70px;
-    margin-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 576px)
-{
   .section-title
   {
     font-size: 25px;
@@ -705,7 +666,7 @@ nav.navbar  ul li a:hover::after {
    /* ======= HEADING SECTION ========= */
    .heading-section
    {
-    height: 300px;
+    height: 600px;
    }
    .heading-data
    {
@@ -733,7 +694,7 @@ nav.navbar  ul li a:hover::after {
    /* ======= ABOUT SECTION ======= */
    .about-section
   {
-    height: 500px;
+    height: 820px;
     border-radius: 20px 20px 0 0;
   }
   /* .about-item-all
@@ -743,11 +704,11 @@ nav.navbar  ul li a:hover::after {
   .about-desc h4
   {
     font-size: 25px;
-    text-align: center;
+    text-align: left;
   }
   .about-desc p
   {
-    text-align: center;
+    text-align: left;
   }
    .about-image img
   {
@@ -757,7 +718,7 @@ nav.navbar  ul li a:hover::after {
   /* ========== SKILL SECTION ======= */
   .skill-section
   {   
-    height: 500px;
+    height: 1380px;
   }
   .skill-data-all
   {
@@ -784,15 +745,10 @@ nav.navbar  ul li a:hover::after {
     padding: 70px 0;
   }
 
-  .node-path.row .col-2.full-left::after 
-  {
-    height: 100%;
-    left: calc(56% - 3px);
-  }
   .node-path.row .col-2.top-right::after 
   {
     height: 50%;
-    left: 45%;
+    left: calc(50% - 3px);
     top: 0;
   }
   /* ========== FOOTER SECTION ======= */
@@ -833,23 +789,29 @@ nav.navbar  ul li a:hover::after {
 
 }
 
-@media screen and (max-width: 768px)
+@media (min-width: 576px) and (max-width: 767.98px)
 {
+  /* ========= NAVBAR MENU ============= */
+  .navbar-collapse
+  {
+    text-align: center;
+  }
+  .navbar-nav .nav-item
+  {
+    margin: 15px 0;
+  }
 
    /* ======= HEADING SECTION ========= */
    .heading-section
    {
-      height: 650px;
+      height: 700px;
    }
    .heading-data
    {
      order: 1;
      text-align: center;
    }
-   .heading-data h1
-   {
-     font-size: 38px;
-   }
+   
    .heading-data h3
    {
      font-size: 28px;
@@ -911,3 +873,58 @@ nav.navbar  ul li a:hover::after {
     margin-top: 12px;
   }
 }
+
+
+@media (min-width: 768px) and (max-width: 991.98px)
+{
+  /* ========= NAVBAR MENU ============= */
+  .navbar-collapse
+  {
+    text-align: center;
+  }
+  .navbar-nav .nav-item
+  {
+    margin: 15px 0;
+  }
+  /* =========== WAVE SECTION ============ */
+  .wave
+  {
+    display: none;
+  }
+  /* ======= HEADING SECTION ========= */
+  .heading-section
+  {
+    height: 700px;
+    border-radius: 0 0 30px 30px;
+  }
+
+  .heading-item-all
+  {
+    text-align: center;
+  }
+  .heading-data
+  {
+    order: 2;
+  }
+
+  /* ======= ABOUT SECTION ======= */
+  .about-section
+  {
+    height: 800px;
+  }
+
+  /* ======= SKILL SECTION ======= */
+  .skill-section
+  {
+    height: 1600px;
+  }
+  .card-skill
+  {
+    order: 1;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+}
+
+
+
