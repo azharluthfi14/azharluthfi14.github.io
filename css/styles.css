@@ -30,6 +30,7 @@ body
     text-align: center;
     position: relative;
     font-weight: 550;
+    margin-top: 60px;
     font-family: 'Quicksand',sans-serif;
 }
 
@@ -718,7 +719,7 @@ nav.navbar  ul li a:hover::after {
   /* ========== SKILL SECTION ======= */
   .skill-section
   {   
-    height: 1380px;
+    height: 1400px;
   }
   .skill-data-all
   {
